@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from "./Navbar";
-import Pricing from "./pages/Pricing";
-import Home from "./pages/About";
-import About from "./pages/About";
 import Breakfast from "./pages/Breakfast";
+import Lunch from "./pages/Lunch";
+import Home from "./pages/Home";
+import Dinner from "./pages/Dinner";
 
 function App() {
     let component
@@ -11,14 +11,14 @@ function App() {
         case "/":
             component=<Home/>
             break
-        case "/pricing":
-            component=<Pricing/>
-            break
-        case "/about":
-            component=<About/>
-            break
         case"/breakfast":
             component=<Breakfast/>
+            break
+        case"/lunch":
+            component=<Lunch/>
+            break
+        case"/dinner":
+            component=<Dinner/>
     }
     return (
         <>
@@ -26,7 +26,6 @@ function App() {
             <div>
                 {component}
             </div>
-
         </>
     )
 
