@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.button`
-    background-color: #37AEE2;
+    background-color: rgb(64, 55, 55 , 0.8);
     border-radius: .5rem;
     box-sizing: border-box;
     color: #FFFFFF;
@@ -14,6 +14,6 @@ export default styled.button`
     cursor: pointer;
     margin:1rem;
     &:hover {
-    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+    background:rgb(64, 55, 55 , 1);
   }
 `;
