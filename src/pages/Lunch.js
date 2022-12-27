@@ -1,12 +1,14 @@
 import React from "react";
-import MyMenu from "./styled/MyMenu";
-import MyButton from "./styled/MyButton";
+import RecipeCointainer from "./styled/RecipeCointainer";
+
 
 export default function Lunch() {
-        return (
-            <MyMenu>
-                <MyButton text={"Vegetarian"}><a href={"/lunch/vege"}>Vegetarian</a></MyButton>
-                <MyButton text={"With meat"}><a href={"/lunch/meat"}>With Meat</a></MyButton>
-            </MyMenu>
-        )
+    let recipeData=["Tosts with chenese<br>","eggs,<br>bread,<br>oil,<br>","set bdjshbdbsdhncdncjb<br>bjsabjbajkbcjsabckas<br>chdabcdbsckeabcdj<br></br>"];
+    return (
+        <RecipeCointainer>
+            <div dangerouslySetInnerHTML={{ __html:recipeData[0]} }></div>
+            <div dangerouslySetInnerHTML={{ __html:recipeData[1]}}></div>
+            <div dangerouslySetInnerHTML={{ __html:recipeData[2]}}></div>
+        </RecipeCointainer>
+    )
 }

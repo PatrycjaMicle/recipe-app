@@ -20,11 +20,12 @@ function App() {
         case"/dinner":
             component=<Dinner/>
     }
-    if (window.location.pathname=="/breakfast"){
+
+    /*if (window.location.pathname=="/breakfast"){
         let list=getRecipeList();
         getRecipe(list);
 
-    }
+    }*/
 
     return (
         <>
@@ -37,9 +38,9 @@ function App() {
 
 }
 
-function getRecipeList(){
+export function getRecipeList(meal){
 
-    const urlBreakfast = "https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=breakfast";
+    const url = "https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags="+meal;
 
     function httpGet(url) {
         const request = new XMLHttpRequest();
@@ -56,34 +57,31 @@ function getRecipeList(){
         return JSON.parse(response);
     }
 
-    return getList(urlBreakfast);
+    return getList(url);
 }
 
 
 
-function getRecipe(list){
+export function getRecipe(list){
 
-    let name=list.results[1].name+"\n";                                 //name
+    let name=list.results[1].name+{ __html: "<br/>"};                                 //name
     const componentsList= list.results[1].sections[0].components;
 
     let ingredients = "";                                           //ingredients
     for(let i=0;i<componentsList.length;i++){
-        let component =componentsList[i].raw_text+"\n";
+        let component =componentsList[i].raw_text+"<br/>";
         ingredients+=component;
     }
 
     const instructionsList=list.results[1].instructions;
     let instructions="";                                        //instructions
     for(let i=0;i<instructionsList.length;i++){
-        let instruction=instructionsList[i].display_text+"\n";
+        let instruction=instructionsList[i].display_text+"<br/>";
         instructions+=instruction;
     }
 
-    console.log(name,ingredients,instructions);
-
-    //NEXT STEPS
-    //epxport name , ingredients , instructions
-    //import in components
+    const recipeData = [name, ingredients, instructions];
+    return recipeData;
 }
 
 export default App;
