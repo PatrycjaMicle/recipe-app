@@ -9,7 +9,7 @@ export default function Home() {
             <MyButton text={"Breakfast"}><a href={"/breakfast"}>Breakfast</a></MyButton>
             <MyButton text={"Lunch"}><a href={"/lunch"}>Lunch</a></MyButton>
             <MyButton text={"Dinner"}><a href={"/dinner"}>Dinner</a></MyButton>
-            <MyButton text={"Dessert"}><a href={"/dessert"}>Dessert</a></MyButton>
+            <MyButton text={"Dessert"}><a href={"/desserts"}>Dessert</a></MyButton>
         </MyMenu>
     )
 }
