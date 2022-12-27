@@ -40,7 +40,7 @@ function App() {
 
 export function getRecipeList(meal){
 
-    const url = "https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags="+meal;
+    const url = "https://tasty.p.rapidapi.com/recipes/list?from=0&size=5&tags="+meal;
 
     function httpGet(url) {
         const request = new XMLHttpRequest();
@@ -64,8 +64,12 @@ export function getRecipeList(meal){
 
 export function getRecipe(list){
 
-    let name=list.results[1].name+{ __html: "<br/>"};                                 //name
-    const componentsList= list.results[1].sections[0].components;
+
+    const random = Math.floor(Math.random() * 5);
+    console.log(random, months[random]);
+
+    let name=list.results[random].name+{ __html: "<br/>"};                                 //name
+    const componentsList= list.results[random].sections[0].components;
 
     let ingredients = "";                                           //ingredients
     for(let i=0;i<componentsList.length;i++){
@@ -73,7 +77,7 @@ export function getRecipe(list){
         ingredients+=component;
     }
 
-    const instructionsList=list.results[1].instructions;
+    const instructionsList=list.results[random].instructions;
     let instructions="";                                        //instructions
     for(let i=0;i<instructionsList.length;i++){
         let instruction=instructionsList[i].display_text+"<br/>";

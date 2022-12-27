@@ -76,6 +76,7 @@ height: 550px;
 
 body{
   background-image: url("images/pexels-elle-hughes-1660030.jpg");
+  background-position: inherit;
 }
 
 ::-webkit-scrollbar {
