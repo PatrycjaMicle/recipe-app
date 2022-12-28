@@ -67,7 +67,9 @@ export function getRecipeList(meal){
     return getList(url);
 }
 
+export function getImage() {
 
+}
 
 export function getRecipe(list){
 
