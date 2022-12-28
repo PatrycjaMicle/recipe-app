@@ -51,10 +51,10 @@ export function getRecipeList(meal){
 
     function httpGet(url) {
         const request = new XMLHttpRequest();
-        request.open("GET", url, false); // async: false?
+        request.open("GET", url, false);
         request.setRequestHeader('X-RapidAPI-Key','ad4b45ab06msh184b62126bc0e87p15d299jsn3c0c3f024f01');
         request.setRequestHeader('X-RapidAPI-Host','tasty.p.rapidapi.com')
-        request.send(null); // body:null??
+        request.send(null);
 
         return request.responseText;
     }
