@@ -30,7 +30,3 @@ And at the bottom the instructions, how to prepare the meal.
 ## Used technologies
 
 React,Javascript, using Tasty API.
-
-## Link
-
-[open recipe app](https://patrycjamicle.github.io/recipe-app/)
