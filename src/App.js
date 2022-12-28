@@ -3,7 +3,10 @@ import Navbar from "./Navbar";
 import Breakfast from "./pages/Breakfast";
 import Lunch from "./pages/Lunch";
 import Home from "./pages/Home";
-import Dinner from "./pages/Dinner";
+import Dessert from "./pages/Dessert";
+import Under30 from "./pages/Under30";
+import LowCarb from "./pages/LowCarb";
+import SpecialOccasion from "./pages/SpecialOccasion";
 
 function App() {
     let component
@@ -17,15 +20,19 @@ function App() {
         case"/lunch":
             component=<Lunch/>
             break
-        case"/dinner":
-            component=<Dinner/>
+        case"/under_30_min":
+            component=<Under30/>
+            break
+        case"/dessert":
+            component=<Dessert/>
+            break
+        case "/low_carb":
+            component=<LowCarb/>
+            break
+        case "/special_occasion":
+            component=<SpecialOccasion/>
     }
 
-    /*if (window.location.pathname=="/breakfast"){
-        let list=getRecipeList();
-        getRecipe(list);
-
-    }*/
 
     return (
         <>
@@ -66,9 +73,8 @@ export function getRecipe(list){
 
 
     const random = Math.floor(Math.random() * 5);
-    console.log(random, months[random]);
 
-    let name=list.results[random].name+{ __html: "<br/>"};                                 //name
+    let name=list.results[random].name+"<br/>";                        //name
     const componentsList= list.results[random].sections[0].components;
 
     let ingredients = "";                                           //ingredients

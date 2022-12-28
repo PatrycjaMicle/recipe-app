@@ -2,8 +2,8 @@ import React from "react";
 import {getRecipe, getRecipeList} from "../App";
 import RecipeCointainer from "./styled/RecipeCointainer";
 
-export default function Lunch() {
-    let list=getRecipeList("lunch");
+export default function Under30() {
+    let list=getRecipeList("under_30_minutes");
     let recipeData=getRecipe(list);
     return (
         <RecipeCointainer className={"cointainer"}>
