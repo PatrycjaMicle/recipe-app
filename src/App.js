@@ -13,6 +13,7 @@ function App() {
     let component
     switch (window.location.pathname) {
         case "/":
+        case "/recipe-app":
             component=<Home/>
             break
         case"/breakfast":
