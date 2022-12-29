@@ -74,10 +74,8 @@ height: 500px;
 
 }
 
-body{
-  background-image: url("images/pexels-elle-hughes-1660030.jpg");
-  background-position: inherit;
-}
+
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -111,6 +109,28 @@ body{
    height:950px;
   }
 }
+
+@media screen and (min-width: 700px){
+  .mainPage{
+    width: 650px;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+body{
+align-content: center;
+  align-items: center;
+}
+.mainPage{
+  background-image: url("images/pexels-elle-hughes-1660030.jpg");
+  background-position: inherit ;
+}
+
 
 
 

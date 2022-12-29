@@ -7,6 +7,7 @@ import Dessert from "./pages/Dessert";
 import Under30 from "./pages/Under30";
 import LowCarb from "./pages/LowCarb";
 import SpecialOccasion from "./pages/SpecialOccasion";
+import MyMenu from "./pages/styled/MyMenu";
 
 function App() {
     let component
@@ -35,12 +36,12 @@ function App() {
 
 
     return (
-        <>
+        <div className={"mainPage"}>
             <Navbar/>
             <div>
                 {component}
             </div>
-        </>
+        </div>
     )
 
 }
