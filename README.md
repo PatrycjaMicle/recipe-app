@@ -30,4 +30,4 @@ And at the bottom the instructions, how to prepare the meal.
 
 React,Javascript, using Tasty API.
 
-You'll find  all the components in src order. 
+You'll find  all the components in src folder. 
