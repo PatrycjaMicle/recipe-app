@@ -11,7 +11,6 @@ In a main menu you will see the categories.
     <img src="https://github.com/PatrycjaMicle/recipe-app/blob/main/src/images/Screenshot1.jpg?raw=true" alt="app_screenshot" />
 </p>
 
-The app is being designed as well for mobiles,so you can easily open it on your phone.
 
 <p align="center">
     <img src="https://github.com/PatrycjaMicle/recipe-app/blob/main/src/images/Screenshot2.jpg?raw=true" alt="app_screenshot" />
@@ -34,3 +33,5 @@ And at the bottom the instructions, how to prepare the meal.
 ## Used technologies
 
 React,Javascript, using Tasty API.
+
+You'll find  all the components in src folder. 
