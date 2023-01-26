@@ -27,6 +27,10 @@ And at the bottom the instructions, how to prepare the meal.
     <img src="https://github.com/PatrycjaMicle/recipe-app/blob/main/src/images/Screenshot4.jpg?raw=true" alt="app_screenshot" />
 </p>
 
+## Link
+[Link](https://patrycjamicle.github.io/recipe-app-using-React/)
+
+
 ## Used technologies
 
 React,Javascript, using Tasty API.
