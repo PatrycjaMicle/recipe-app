@@ -4,6 +4,15 @@
 
 body{
   margin:0;
+  height: 100%;
+  align-content: center;
+  align-items: center;
+  background-image: url("images/pexels-elle-hughes-1660030.jpg");
+  background-position: inherit ;
+}
+
+html{
+height: 100%;
 }
 
 .nav {
@@ -62,7 +71,7 @@ a{
 
 
 .cointainer{
-height: 500px;
+  height: 500px;
   scroll-behavior: smooth;
   overflow-y: scroll;
   display: block !important;
@@ -122,14 +131,10 @@ height: 500px;
   }
 }
 
-body{
-align-content: center;
-  align-items: center;
-}
 .mainPage{
-  background-image: url("images/pexels-elle-hughes-1660030.jpg");
-  background-position: inherit ;
+  background: rgb(220,220,220,0.6);
 }
+
 
 
 
